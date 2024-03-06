@@ -21,10 +21,10 @@ This repository provides a custom authentication system for Next.js 14 applicati
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/nextjs-jwt-cookie-auth.git
+git clone https://github.com/DEV-ASHANAUR/next-14-custom-authentication.git
 
 # Navigate to the project directory
-cd nextjs-jwt-cookie-auth
+cd next-14-custom-authenticationh
 
 # Install dependencies
 npm install
