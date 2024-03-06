@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Custom JWT-Cookie Authentication System for Next.js 14 with App Router
+
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## Overview
+
+This repository provides a custom authentication system for Next.js 14 applications using JSON Web Tokens (JWT) and cookies. The authentication flow is implemented with the new App Router, taking advantage of the latest features and improvements in Next.js.
+
+## Features
+
+- **JWT-Cookie Authentication:** Secure user authentication using JSON Web Tokens stored in HTTP cookies.
+- **Next.js 14:** Leverages the latest version of Next.js for optimized performance and developer experience.
+- **App Router:** Implements routing with the new App Router for efficient client-side navigation.
+- **Custom Middleware:** Easily customizable middleware for protecting routes and handling authentication logic.
+- **Signup, Email Verification, and Password Reset:** Includes functionality for user signup, email verification, and password reset.
+- **Example Implementation:** Includes a simple example application to demonstrate how to integrate the authentication system into your Next.js app.
 
 ## Getting Started
 
-First, run the development server:
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# Clone the repository
+git clone https://github.com/yourusername/nextjs-jwt-cookie-auth.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Navigate to the project directory
+cd nextjs-jwt-cookie-auth
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Install dependencies
+npm install
