@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import dynamic from 'next/dynamic'
+import { cookies } from "next/headers";
+import Navbar from "../components/Navbar";
+// const Navbar = dynamic(() => import('../components/Navbar'), { ssr: false })
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,10 +17,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const cookiesList = cookies()
+  const token = cookiesList.get('token')
   return (
+
     <html lang="en">
       <body className={`${inter.className}`}>
-          {children}
+        <main className="bg-slate-800 h-screen text-white ">
+            <Navbar token={token} />
+            {children}
+        </main>
       </body>
     </html>
   );
